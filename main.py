@@ -215,7 +215,7 @@ def update_database() -> None:
     with open(file_data1, 'w') as file:
         json.dump(response.json(), file)
 
-    #----------------------------------------------
+    #---------------------------------------
 
     # logger.info(f'Скачиваю вторую базу данных')
 
