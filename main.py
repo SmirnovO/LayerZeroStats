@@ -27,7 +27,7 @@ logger.add(stderr, format="<white>{time:HH:mm:ss}</white> | <level>{level: <8}</
 
 WALLETS = []
 QUERY1 = 2464151
-QUERY2 =  2492847
+QUERY2 = 2492847
 
 
 def is_exists(path: str) -> bool:
@@ -206,6 +206,7 @@ def update_database() -> None:
             response = session.post('https://app-api.dune.com/v1/graphql', json=payload)
             if (response.status_code == 200):
                 logger.success(f'База данных №{QUERY1} успешно скачана!')
+myTemp = 1
                 break
             else:
                 logger.error(f'Ошибка обновления базы данных: {response.text} | Cтатус запроса: {response.status_code}')
