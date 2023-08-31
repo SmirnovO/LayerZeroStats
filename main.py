@@ -10,7 +10,6 @@ from loguru import logger
 from termcolor import colored
 from inquirer.themes import load_theme_from_dict as loadth
 
-
 # FILES SETTINGS
 cwd = os.getcwd()
 file_data1 = f'{cwd}/files/database1.json'
